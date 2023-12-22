@@ -1,0 +1,228 @@
+@import url('https: //fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap') * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h5,
+h4,
+h3 {
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(177, 209, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);
+}
+
+.container .left_panel {
+    position: relative;
+    background-color: #003147;
+    /*#003147*/
+    padding: 25px;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.profile .imgBox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+}
+
+.profile h2 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.profile h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contact {
+    padding-top: 40px;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    position: relative;
+    padding: 0px;
+}
+
+.contact ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact ul li .icon {
+    display: inline-block;
+    font-size: 18px;
+    width: 25px;
+    color: #03a9f4;
+}
+
+.contact ul li span {
+    font-weight: 300;
+    color: #fff;
+}
+
+.contact ul li span a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact.education li {
+    margin-bottom: 15px;
+}
+
+.contact.education h5 {
+    color: #03a9f4;
+    font-weight: 500;
+    margin: 2px 0 2px 0;
+}
+
+.contact.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+    margin: 2px 0 2px 0;
+}
+
+.contact.education h4 {
+    color: #fff;
+    font-weight: 300;
+    margin: 2px 0 2px 0;
+}
+
+.container .right_panel {
+    position: relative;
+    background-color: #fff;
+    /*#003147*/
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 30px;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about ul {
+    color: #333;
+    margin-top: 0px;
+}
+
+.about ul li {
+    margin-bottom: 5px;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.about .box .year h5 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-weight: 600;
+}
+
+.company {
+    text-transform: uppercase;
+    color: #333 !important;
+    margin-top: 5px;
+}
+
+.about .box .text ul {
+    padding-left: 0px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    color: #333;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.skill-container .box {
+    margin: 0px;
+}
+
+.skill-container .box ul {
+    padding-left: 0px;
+    color: #333;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+.skill-container .box ul li span {
+    font-weight: 600;
+}
+
+@media (max-width:1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

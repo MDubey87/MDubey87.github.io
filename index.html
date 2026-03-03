@@ -2,207 +2,246 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Manish Dubey</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Manish Dubey — Resume</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="left_panel">
-            <div class="profile">
-                <div class="imgBox">
-                    <img src="images/profile.jpeg" alt="profile picture" />
-                </div>
-                <h2>Manish Dubey<br /><span>Delivery Module Lead</span></h2>
-            </div>
-            <div class="contact">
-                <h3 class="title">Contact</h3>
-                <ul>
-                    <li>
-                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <span class="text">+91-8130246127</span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                        <span class="text">manish.dubey@outlook.com</span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-                        <span class="text"><a href="https://www.linkedin.com/in/manish-dubey-73465315/"
-                                target="_blank">in/manish-dubey-73465315</a></span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
-                        <span class="text"><a href="https://github.com/MDubey87" target="_blank">MDubey87</a></span>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span class="text">Greater Noida, Uttar Pradesh, 201306</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="contact education">
-                <h3 class="title">Education</h3>
-                <ul>
-                    <li>
-                        <h5>2007 - 2010</h5>
-                        <h4>Master in Computer Application</h4>
-                        <h4>Babu Banarsi Das National Institute of Technology and Management - Lucknow, UP</h4>
-                    </li>
-                    <li>
-                        <h5>2004 - 2007</h5>
-                        <h4>Bachelor of Science</h4>
-                        <h4>Munishwar Dutt Post Graduate College - Pratapgarh, UP</h4>
-                    </li>
-                </ul>
-            </div>
-            <div class="contact language">
-                <h3 class="title">Certifications</h3>
-                <ul>
-                    <li><span class="text">Google Cloud Associate Cloud Engineer</span></li>
-                </ul>
-            </div>
-            <div class="contact language">
-                <h3 class="title">Awards</h3>
-                <ul>
-                    <li><span class="text">Received "Outstanding Contributor" award in HCL Technologies in Sep
-                            2014</span></li>
-                    <li><span class="text">Received "Monthly Summit" award in Mphasis for May 2018</span></li>
-                    <li><span class="text">Received "Monthly Summit" award in Mphasis for June 2020</span></li>
-                </ul>
-            </div>
-            <div class="contact language">
-                <h3 class="title">Languages</h3>
-                <ul>
-                    <li><span class="text">English</span></li>
-                    <li><span class="text">Hindi</span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="right_panel">
-            <div class="about">
-                <h2 class="title2">Professional Summary</h2>
-                <p>Accomplished Senior Lead with 14 years of experience and a proven track record in .NET technologies
-                    and Angular. An
-                    expert in driving process improvements and mentoring teams to enhance productivity. Skilled in API
-                    development and Agile
-                    methodologies, consistently delivering robust solutions and fostering innovation.</p>
-            </div>
-            <div class="about skill">
-                <h2 class="title2">Professional Skills</h2>
-                <div class="skill-container">
-                    <div class="box">
-                        <ul>
-                            <li>C#, ASP.Net, .Net Core</li>
-                            <li>Angular 12 and above</li>
-                            <li>API Development</li>
-                            <li>Node Js</li>
-                            <li>Microsoft SQL Server</li>
-                            <li>Visual Studio, Visual Studio Code</li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <ul>
-                            <li>TFS, Source Tree, Bit Bucket, GitHub</li>
-                            <li>.Net Development</li>
-                            <li>JIRA, Confluence, Splunk</li>
-                            <li>Bitbucket, Bamboo</li>
-                            <li>Agile Methodologies</li>
-                        </ul>
-                    </div>
+    <!-- Toolbar with Download PDF + Dark mode -->
+    <div class="toolbar" role="toolbar" aria-label="Resume actions">
+        <button class="btn" id="themeBtn" type="button" aria-pressed="false" title="Toggle dark mode">
+            <!-- moon/sun icon -->
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="currentColor"
+                    d="M21.64 13a1 1 0 0 0-1.05-.14A8 8 0 0 1 11.14 3.41a1 1 0 0 0-1.19-1.3A10 10 0 1 0 22 14.19a1 1 0 0 0-.36-1.19ZM12 20a8 8 0 0 1-2-15.74A10 10 0 0 0 19.74 14 8 8 0 0 1 12 20Z" />
+            </svg>
+            <span>Dark mode</span>
+        </button>
+    </div>
 
-                </div>
+    <div class="page">
+        <div class="sheet">
 
-            </div>
-            <div class="about">
-                <h2 class="title2">Experience</h2>
-                <div class="box">
-                    <div class="year">
-                        <h5>Delivery Module Lead, 08/2017 - Present</h5>
-                        <h5 class="company">Mphasis Limited</h5>
-                    </div>
-                    <div class="text">
+            <!-- Header -->
+            <header>
+                <h1 class="name">Manish Dubey</h1>
+                <p class="contact">
+                    <span>Greater Noida, Uttar Pradesh 201306</span>
+                    <span class="dot">•</span>
+                    <span>+91 8130246127</span>
+                    <span class="dot">•</span>
+                    <a href="mailto:manish.dubey@outlook.com">manish.dubey@outlook.com</a>
+                </p>
+            </header>
+
+            <!-- Two-column body -->
+            <section class="content">
+                <!-- Left / Main -->
+                <main>
+                    <h2 class="section-title">Professional Summary</h2>
+                    <p>
+                        Accomplished Senior Lead with 15+ years of experience and a proven track record in .NET
+                        technologies and Angular.
+                        Expert in driving process improvements and mentoring teams to enhance productivity. Skilled in
+                        API development and Agile methodologies,
+                        consistently delivering robust solutions and fostering innovation.
+                    </p>
+
+                    <div class="rule"></div>
+
+                    <h2 class="section-title">Experience</h2>
+
+                    <section class="role">
+                        <div class="role-head">
+                            <div class="role-title">Technical Lead</div>
+                            <div class="role-meta">03/2025 – Present</div>
+                        </div>
+                        <div class="company">Capgemini</div>
                         <ul>
                             <li>API development and maintenance using .NET Core API.</li>
+                            <li>Implemented Azure Key Vault for keeping the API configuration.</li>
                             <li>Conducted code reviews to improve code quality.</li>
-                            <li>Single Page Application development using Angular.</li>
-                            <li>Working closely with clients to establish problem specifications and system designs.
-                            </li>
                             <li>Lead a cross-functional team to successfully complete a major software project on time.
                             </li>
                             <li>Mentored junior developers to ensure adherence to best practices, and improved code
                                 quality.</li>
                             <li>Developed unit tests and implemented automated testing to increase code coverage to 85%.
                             </li>
-                            <li>Developed automation frameworks using JavaScript, NodeJS, TypeScript technologies.</li>
-                            <li>Developed RESTful web services APIs using Node.js</li>
                         </ul>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="year">
-                        <h5>Senior Software Engineer, 01/2014 - 08/2017</h5>
-                        <h5 class="company">HCL Technologies Ltd.</h5>
-                    </div>
-                    <div class="text">
+                    </section>
+
+                    <section class="role">
+                        <div class="role-head">
+                            <div class="role-title">Delivery Module Lead</div>
+                            <div class="role-meta">08/2017 – 02/2025</div>
+                        </div>
+                        <div class="company">Mphasis Limited</div>
                         <ul>
-                            <li>Application Development and Migration in Asp.Net.</li>
-                            <li>Built databases and table structures following n-tier architecture methodology for web
-                                applications
+                            <li>API development and maintenance using .NET Core API.</li>
+                            <li>Conducted code reviews to improve code quality.</li>
+                            <li>Single Page Application development using Angular.</li>
+                            <li>Lead a cross-functional team to successfully complete a major software project on time.
                             </li>
+                            <li>Mentored junior developers to ensure adherence to best practices, and improved code
+                                quality.</li>
+                            <li>Developed unit tests and implemented automated testing to increase code coverage to 85%.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="role">
+                        <div class="role-head">
+                            <div class="role-title">Senior Software Engineer</div>
+                            <div class="role-meta">01/2014 – 08/2017</div>
+                        </div>
+                        <div class="company">HCL Technologies Ltd.</div>
+                        <ul>
+                            <li>Application Development and Migration in Asp.Net</li>
+                            <li>Built databases and table structures following n-tier architecture methodology for web
+                                applications</li>
                             <li>Maintenance and support of application</li>
                         </ul>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="year">
-                        <h5>Senior Software Engineer, 06/2012 - 12/2013</h5>
-                        <h5 class="company">Chetu India Pvt. Ltd.</h5>
-                    </div>
-                    <div class="text">
+                    </section>
+
+                    <section class="role">
+                        <div class="role-head">
+                            <div class="role-title">Senior Software Engineer</div>
+                            <div class="role-meta">06/2012 – 01/2014</div>
+                        </div>
+                        <div class="company">Chetu India Pvt. Ltd.</div>
                         <ul>
                             <li>Coding and development.</li>
                             <li>Writing T-SQL statements, like stored procedures and queries.</li>
                             <li>Maintenance and support of the application.</li>
                             <li>Maintenance of databases.</li>
                         </ul>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="year">
-                        <h5>Dot Net Developer, 08/2011 - 06/2012</h5>
-                        <h5 class="company">Tekege Solutions Pvt. Ltd.</h5>
-                    </div>
-                    <div class="text">
+                    </section>
+
+                    <section class="role">
+                        <div class="role-head">
+                            <div class="role-title">Dot Net Developer</div>
+                            <div class="role-meta">08/2011 – 06/2012</div>
+                        </div>
+                        <div class="company">Tekege Solution Pvt.</div>
                         <ul>
-                            <li>Coding and development.</li>
-                            <li>Writing T-SQL statements, like stored procedures and queries.</li>
-                            <li>Maintenance and support of the application.</li>
-                            <li>Fixing defects and issues reported on BaseCamp.</li>
+                            <li>Coding and development</li>
+                            <li>Writing T-SQL statements like stored procedures and queries</li>
+                            <li>Maintenance and support of application</li>
+                            <li>Fixing defects and issues reported on BaseCamp</li>
                         </ul>
+                    </section>
+
+                    <div class="rule"></div>
+
+                    <h2 class="section-title">Awards</h2>
+                    <ul>
+                        <li>Received "Outstanding Contributor" award in HCL Technologies in Sep 2014</li>
+                        <li>Received "Monthly Summit" award in Mphasis for May 2018</li>
+                        <li>Received "Monthly Summit" award in Mphasis for June 2020</li>
+                    </ul>
+                </main>
+
+                <!-- Right / Sidebar -->
+                <aside>
+                    <div class="side-section">
+                        <h3 class="side-title">Skills</h3>
+                        <div class="chips">
+                            <span class="chip">Angular 10 and above</span>
+                            <span class="chip">Jasmine and Karma</span>
+                            <span class="chip">Agile methodology</span>
+                            <span class="chip">.NET development</span>
+                            <span class="chip">Visual Studio</span>
+                            <span class="chip">Visual Studio Code</span>
+                            <span class="chip">MS SQL Server</span>
+                            <span class="chip">PostgreSQL</span>
+                            <span class="chip">TFS</span>
+                            <span class="chip">JIRA</span>
+                            <span class="chip">Confluence</span>
+                            <span class="chip">GIT</span>
+                            <span class="chip">HTML</span>
+                            <span class="chip">JavaScript</span>
+                            <span class="chip">Dotnet Core</span>
+                            <span class="chip">API development</span>
+                            <span class="chip">Mentoring</span>
+                            <span class="chip">Bitbucket</span>
+                            <span class="chip">Bamboo</span>
+                            <span class="chip">Azure</span>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <div class="year">
-                        <h5>Software Developer, 06/2010 - 07/2011</h5>
-                        <h5 class="company">Acme Digitek Solutions (P) Ltd.</h5>
+
+                    <div class="side-section">
+                        <h3 class="side-title">Education</h3>
+                        <div class="edu-item">
+                            <strong>Masters</strong>: Computer Application <span class="subtle">(06/2010)</span><br />
+                            <span class="subtle">Babu Banarsi Das National Institute of Technology and Management -
+                                Lucknow, UP</span>
+                        </div>
+                        <div class="edu-item">
+                            <strong>Bachelor of Science</strong>: Mathematics <span
+                                class="subtle">(06/2007)</span><br />
+                            <span class="subtle">Munishwar Dutt Post Graduate College - Pratapgarh, UP</span>
+                        </div>
                     </div>
-                    <div class="text">
-                        <ul>
-                            <li>Coding and development.</li>
-                            <li>Writing T-SQL statements, like stored procedures and queries.</li>
-                            <li>Development and Deployment of the application, managing the database.</li>
-                        </ul>
+
+                    <div class="side-section">
+                        <h3 class="side-title">Certifications</h3>
+                        <div class="cert-item">Google Cloud Associate Cloud Engineer</div>
                     </div>
-                </div>
-            </div>
+                </aside>
+            </section>
+
+            <footer>
+                <span>Resume — Manish Dubey</span>
+                <span class="subtle">Use your browser’s Print → “Save as PDF” for a PDF version.</span>
+            </footer>
 
         </div>
     </div>
+
+    <script>
+        // =========================
+        // Dark mode toggle with persistence
+        // - Respects system preference by default
+        // - Stores manual choice in localStorage
+        // =========================
+        const themeBtn = document.getElementById('themeBtn');
+        const root = document.documentElement;
+
+        function setTheme(mode, persist = true) {
+            if (mode === 'dark') {
+                root.setAttribute('data-theme', 'dark');
+                themeBtn.setAttribute('aria-pressed', 'true');
+                themeBtn.querySelector('span').textContent = 'Light mode';
+            } else {
+                root.removeAttribute('data-theme');
+                themeBtn.setAttribute('aria-pressed', 'false');
+                themeBtn.querySelector('span').textContent = 'Dark mode';
+            }
+            if (persist) {
+                localStorage.setItem('theme', mode);
+            }
+        }
+
+        // Init theme
+        const saved = localStorage.getItem('theme');
+        if (saved) {
+            setTheme(saved, false);
+        } else {
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            setTheme(prefersDark ? 'dark' : 'light', false);
+        }
+
+        // Toggle
+        themeBtn.addEventListener('click', () => {
+            const isDark = root.getAttribute('data-theme') === 'dark';
+            setTheme(isDark ? 'light' : 'dark', true);
+        });
+    </script>
 </body>
 
 </html>

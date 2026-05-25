@@ -1,446 +1,364 @@
-<head>
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Manish Dubey | Technical Lead</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== PRIMARY SEO ===== -->
+    <title>Manish Dubey | Technical Lead — .NET Core, Angular & Azure Expert | Greater Noida</title>
+    <meta name="description"
+        content="Manish Dubey is a Technical Lead with 12+ years of experience building scalable enterprise applications using .NET Core 8, C#, Angular, Azure (AKS), and PostgreSQL. Currently at Capgemini, Noida." />
+    <meta name="keywords"
+        content="Manish Dubey, Technical Lead, .NET Core, C#, Angular, Azure, AKS, PostgreSQL, Software Engineer, Capgemini, Greater Noida, Full Stack Developer" />
+    <meta name="author" content="Manish Dubey" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://mdubey87.github.io/" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ===== OPEN GRAPH (LinkedIn, WhatsApp, Facebook) ===== -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Manish Dubey | Technical Lead — .NET Core, Angular & Azure" />
+    <meta property="og:description"
+        content="12+ years building scalable enterprise apps with .NET Core 8, Angular, Azure AKS, and PostgreSQL. Technical Lead at Capgemini, Noida." />
+    <meta property="og:url" content="https://mdubey87.github.io/" />
+    <meta property="og:site_name" content="Manish Dubey Portfolio" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="profile:first_name" content="Manish" />
+    <meta property="profile:last_name" content="Dubey" />
+
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Manish Dubey | Technical Lead — .NET Core, Angular & Azure" />
+    <meta name="twitter:description"
+        content="12+ years building scalable enterprise apps with .NET Core 8, Angular, Azure AKS, and PostgreSQL. Technical Lead at Capgemini." />
+    <meta name="twitter:creator" content="@MDubey87" />
+
+    <!-- ===== JSON-LD STRUCTURED DATA ===== -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Manish Dubey",
+    "jobTitle": "Technical Lead",
+    "description": "Technical Lead with 12+ years of experience in .NET Core, C#, Angular, Azure, and PostgreSQL. Currently leading enterprise application development at Capgemini, Noida.",
+    "url": "https://mdubey87.github.io/",
+    "email": "manish.dubey@outlook.com",
+    "telephone": "+91-8130246127",
+    "image": "https://mdubey87.github.io/profile.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Greater Noida",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Babu Banarsi Das National Institute of Technology and Management",
+        "sameAs": "https://www.bbdnitm.ac.in/"
+      }
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Capgemini",
+      "sameAs": "https://www.capgemini.com/"
+    },
+    "knowsAbout": [
+      ".NET Core", "C#", "Angular", "Azure", "Azure Kubernetes Service",
+      "PostgreSQL", "Microservices", "RESTful APIs", "TypeScript", "Redis",
+      "RabbitMQ", "Entity Framework Core", "ASP.NET Core", "SQL Server", "MongoDB"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/manishdubey26",
+      "https://github.com/MDubey87"
+    ]
+  }
+  </script>
+
+    <!-- ===== BREADCRUMB STRUCTURED DATA ===== -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mdubey87.github.io/"
+    }]
+  }
+  </script>
+
+
+</head>
 
 <body>
 
-    <!-- ===== NAVIGATION ===== -->
-    <nav>
-        <div class="nav-container">
-            <a href="#" class="nav-logo">Manish Dubey</a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+    <!-- ===== NAV ===== -->
+    <nav aria-label="Site navigation">
+        <span class="nav-brand">MD</span>
+        <ul class="nav-links">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- ===== HERO SECTION ===== -->
+    <!-- ===== HERO ===== -->
     <header class="hero">
-        <div class="hero-content">
-            <div class="hero-avatar">MD</div>
-            <div class="hero-text">
-                <h1>Manish Dubey</h1>
-                <div class="title">Technical Lead — Software Development</div>
-                <p class="tagline">
-                    Passionate technology leader with 12 years of experience building scalable
-                    enterprise solutions. Driving innovation through modern .NET, Angular, and
-                    cloud-native architectures on Azure.
-                </p>
-                <div class="hero-badges">
-                    <span class="hero-badge">🚀 .NET Core</span>
-                    <span class="hero-badge">🅰️ Angular</span>
-                    <span class="hero-badge">☁️ Azure</span>
-                    <span class="hero-badge">🐘 PostgreSQL</span>
-                    <span class="hero-badge">🔷 C#</span>
-                </div>
-            </div>
+        <div class="avatar" role="img" aria-label="Manish Dubey initials avatar">MD</div>
+        <h1>Manish Dubey</h1>
+        <p class="subtitle">Technical Lead — Software Development</p>
+        <div class="badge-row" aria-label="Key technologies">
+            <span class="badge">.NET Core 8</span>
+            <span class="badge">C#</span>
+            <span class="badge">Angular</span>
+            <span class="badge">Azure / AKS</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">Microservices</span>
+        </div>
+        <div class="cta-row">
+            <a href="https://www.linkedin.com/in/manishdubey26" class="btn-primary" rel="noopener" target="_blank"
+                aria-label="Connect with Manish Dubey on LinkedIn">Connect on LinkedIn</a>
+            <a href="#contact" class="btn-secondary">Get in touch</a>
         </div>
     </header>
 
-    <!-- ===== MAIN CONTENT ===== -->
-    <main class="main-content">
-
-        <!-- LEFT COLUMN -->
-        <div class="left-column">
-
-            <!-- PROFILE SUMMARY -->
-            <section class="card" id="profile">
-                <h2 class="section-title">
-                    <span class="section-title-icon">👤</span> Profile Summary
-                </h2>
-                <div class="summary-text">
-                    <p>
-                        Results-driven Software Development Team Lead with over 12 years of experience in designing,
-                        building, and deploying scalable web applications. Adept at leading cross-functional Agile teams
-                        to deliver robust software solutions on time and under budget. Deep technical expertise in
-                        full-stack development utilizing <strong>C#, .NET Core, and Angular</strong>, backed by
-                        high-performance <strong>PostgreSQL</strong> databases and deployed on scalable
-                        <strong>Azure</strong> cloud infrastructure. Passionate about mentoring developers, enforcing
-                        clean code architectures, and translating complex business requirements into enterprise-grade
-                        technical deliverables.
-                    </p>
-                </div>
-                <div class="highlight-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">12</span>
-                        <span class="stat-label">Years Experience</span>
+    <main>
+        <!-- ===== PROFILE ===== -->
+        <section id="profile" aria-labelledby="profile-title">
+            <h2 class="section-title" id="profile-title">👤 Profile Summary</h2>
+            <div class="profile-card">
+                <p>
+                    Results-driven Software Development Team Lead with over 12 years of experience designing,
+                    building, and deploying scalable enterprise web applications. Adept at leading
+                    cross-functional Agile teams to deliver robust software solutions on time and under budget.
+                    Deep technical expertise in full-stack development using <strong>C#, .NET Core 8, and
+                        Angular</strong>,
+                    backed by high-performance <strong>PostgreSQL</strong> databases and deployed on scalable
+                    <strong>Azure</strong> cloud infrastructure including AKS. Passionate about mentoring
+                    developers, enforcing clean code architectures, and translating complex business requirements
+                    into enterprise-grade technical deliverables.
+                </p>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="num">12+</div>
+                        <div class="lbl">Years experience</div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">Team Members Led</span>
+                    <div class="stat">
+                        <div class="num">5+</div>
+                        <div class="lbl">Team members led</div>
+                    </div>
+                    <div class="stat">
+                        <div class="num">3</div>
+                        <div class="lbl">Companies</div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- EXPERIENCE -->
-            <section class="card" id="experience">
-                <h2 class="section-title">
-                    <span class="section-title-icon">💼</span> Experience
-                </h2>
-                <div class="timeline">
-                    <!-- Job 1 -->
-                    <div class="timeline-item">
-                        <div class="timeline-header">
-                            <span class="timeline-role">Technical Lead</span>
-                            <span class="timeline-period">Mar 2025 – Feb 2026</span>
-                        </div>
-                        <div class="timeline-company">Capgemini, Noida</div>
-                        <div class="timeline-desc">
-                            <ul>
-                                <li>Lead a team of 5 developers and 1 QA engineers in delivering enterprise-grade
-                                    application.</li>
-                                <li>Worked on microservices using .NET Core 8, deployed on Azure Kubernetes Service
-                                    (AKS).</li>
-                                <li>Used PostgreSQL as database and application database design.</li>
-                                <li>Conducted code reviews, sprint planning and other technical activities.</li>
-                            </ul>
-                            <div class="timeline-tech">
-                                <span>.NET Core 8</span>
-                                <span>C#</span>
-                                <span>PostgreSQL</span>
-                                <span>Azure AKS</span>
-                                <span>Redis</span>
-                            </div>
-                        </div>
-                    </div>
+        <!-- ===== EXPERIENCE ===== -->
+        <section id="experience" aria-labelledby="exp-title">
+            <h2 class="section-title" id="exp-title">💼 Experience</h2>
 
-                    <!-- Job 2 -->
-                    <div class="timeline-item">
-                        <div class="timeline-header">
-                            <span class="timeline-role">Delivery Module Lead</span>
-                            <span class="timeline-period">Aug 2017 – Feb 2025</span>
-                        </div>
-                        <div class="timeline-company">Bengaluru, Karnataka</div>
-                        <div class="timeline-desc">
-                            <ul>
-                                <li>Developed RESTful APIs and backend services using ASP.NET Core.</li>
-                                <li>Built responsive single-page applications using Angular 8–12 with RxJS</li>
-                                <li>Mentored junior developers through pair programming sessions and technical workshops
-                                </li>
-                                <li>Conducted code reviews, sprint planning and other technical activities.</li>
-                            </ul>
-                            <div class="timeline-tech">
-                                <span>ASP.NET Core</span>
-                                <span>Angular</span>
-                                <span>C#</span>
-                            </div>
-                        </div>
+            <article class="job" itemscope itemtype="https://schema.org/WorkExperience">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title" itemprop="jobTitle">Technical Lead</div>
+                        <div class="job-company" itemprop="name">Capgemini · Noida, India</div>
                     </div>
-
-                    <!-- Job 3 -->
-                    <div class="timeline-item">
-                        <div class="timeline-header">
-                            <span class="timeline-role">Senior Software Engineer</span>
-                            <span class="timeline-period">Jan 2014 – Aug 2017</span>
-                        </div>
-                        <div class="timeline-company">HCL Technologies, Noida</div>
-                        <div class="timeline-desc">
-                            <ul>
-                                <li>Developed full-stack web applications using ASP.NET MVC, C#.</li>
-                                <li>Designed and maintained relational databases using SQL Server.</li>
-                                <li>Maintenance and support of third party applications.</li>
-                            </ul>
-                            <div class="timeline-tech">
-                                <span>ASP.NET MVC</span>
-                                <span>C#</span>
-                                <span>SQL Server</span>
-                            </div>
-                        </div>
+                    <div class="job-date">
+                        <time itemprop="startDate" datetime="2025-03">Mar 2025</time> –
+                        <time itemprop="endDate" datetime="2026-02">Feb 2026</time>
                     </div>
-                    <!-- Job 4 
-                    <div class="timeline-item">
-                        <div class="timeline-header">
-                            <span class="timeline-role">Senior Software Engineer</span>
-                            <span class="timeline-period">Jun 2012 – Jan 2014</span>
-                        </div>
-                        <div class="timeline-company">Chetu India Pvt Ltd, Noida</div>
-                        <div class="timeline-desc">
-                            <ul>
-                                <li>Developed full-stack web applications using ASP.NET MVC, C#.</li>
-                                <li>Designed and maintained relational databases using SQL Server.</li>
-                            </ul>
-                            <div class="timeline-tech">
-                                <span>ASP.NET MVC</span>
-                                <span>C#</span>
-                                <span>SQL Server</span>
-                            </div>
-                        </div>
-                    </div>
-                    Job 5 
-                    <div class="timeline-item">
-                        <div class="timeline-header">
-                            <span class="timeline-role">Dot Net Developer</span>
-                            <span class="timeline-period">Aug 2011 – Jun 2012</span>
-                        </div>
-                        <div class="timeline-company">Tekege Solutions Pvt Ltd, New Delhi</div>
-                        <div class="timeline-desc">
-                            <ul>
-                                <li>Developed full-stack web applications using VB.NET.</li>
-                                <li>Designed and maintained relational databases using SQL Server.</li>
-                            </ul>
-                            <div class="timeline-tech">
-                                <span>VB.NET</span>
-                                <span>SQL Server</span>
-                            </div>
-                        </div>
-                    </div>-->
                 </div>
-            </section>
-
-            <!-- SKILLS -->
-            <section class="card" id="skills">
-                <h2 class="section-title">
-                    <span class="section-title-icon">⚡</span> Skills
-                </h2>
-                <div class="skills-grid">
-
-                    <div class="skill-category">
-                        <div class="skill-category-title">Backend Development</div>
-                        <div class="skill-tags">
-                            <span class="skill-tag featured">.NET Core</span>
-                            <span class="skill-tag featured">C#</span>
-                            <span class="skill-tag featured">Azure</span>
-                            <span class="skill-tag">ASP.NET Web API</span>
-                            <span class="skill-tag">Entity Framework Core</span>
-                            <span class="skill-tag">Microservices</span>
-                            <span class="skill-tag">RESTful APIs</span>
-                            <span class="skill-tag">Generative AI(.NET)</span>
-                            <span class="skill-tag">RabbitMQ</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="skill-category-title">Frontend Development</div>
-                        <div class="skill-tags">
-                            <span class="skill-tag featured">Angular</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">RxJS</span>
-                            <span class="skill-tag">Jasmine</span>
-                            <span class="skill-tag">Karma</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="skill-category-title">Database</div>
-                        <div class="skill-tags">
-                            <span class="skill-tag featured">PostgreSQL</span>
-                            <span class="skill-tag">SQL Server</span>
-                            <span class="skill-tag">Redis</span>
-                            <span class="skill-tag">MongoDB</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="skill-category-title">Leadership & Methodology</div>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Team Leadership</span>
-                            <span class="skill-tag">Agile / Scrum</span>
-                            <span class="skill-tag">Code Reviews</span>
-                            <span class="skill-tag">Mentoring</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <div class="skill-category-title">Tools</div>
-                        <div class="skill-tags">
-                            <span class="skill-tag featured">Visual Studio</span>
-                            <span class="skill-tag featured">Visual Studio Code</span>
-                            <span class="skill-tag featured">GitHub</span>
-                            <span class="skill-tag">GitHub Copilot</span>
-                            <span class="skill-tag">Bitbucket</span>
-                            <span class="skill-tag">Jira</span>
-                            <span class="skill-tag">Confluence</span>
-
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-        </div>
-
-        <!-- RIGHT COLUMN / SIDEBAR -->
-        <aside class="sidebar">
-
-            <!-- CONTACT DETAILS -->
-            <div class="card" id="contact">
-                <h2 class="section-title">
-                    <span class="section-title-icon">📬</span> Contact
-                </h2>
-                <ul class="contact-list">
-                    <li class="contact-item">
-                        <div class="contact-icon email">✉</div>
-                        <div class="contact-details">
-                            <div class="contact-label">Email</div>
-                            <div class="contact-value">
-                                <a href="mailto:manish.dubey@outlook.com">manish.dubey@outlook.com</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="contact-icon phone">☎</div>
-                        <div class="contact-details">
-                            <div class="contact-label">Phone</div>
-                            <div class="contact-value">
-                                <a href="tel:+14155551234">+91- 8130246127</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="contact-icon location">📍</div>
-                        <div class="contact-details">
-                            <div class="contact-label">Location</div>
-                            <div class="contact-value">Greater Noida, Uttar Pradesh, India</div>
-                        </div>
-                    </li>
-                    <li class="contact-item">
-                        <div class="contact-icon github">⌨</div>
-                        <div class="contact-details">
-                            <div class="contact-label">GitHub</div>
-                            <div class="contact-value">
-                                <a href="https://github.com/MDubey87" target="_blank"
-                                    rel="noopener noreferrer">github.com/MDubey87</a>
-                            </div>
-                        </div>
-                    </li>
+                <ul itemprop="description">
+                    <li>Led a team of 5 developers and 1 QA engineer delivering enterprise-grade applications using
+                        Agile/Scrum methodology.</li>
+                    <li>Architected and delivered microservices with .NET Core 8 deployed on Azure Kubernetes Service
+                        (AKS).</li>
+                    <li>Designed PostgreSQL schemas and optimised query performance for high-throughput workloads.</li>
+                    <li>Conducted code reviews, sprint planning, and technical mentoring sessions.</li>
                 </ul>
+                <div class="tech-row" aria-label="Technologies used">
+                    <span class="tech">.NET Core 8</span><span class="tech">C#</span>
+                    <span class="tech">PostgreSQL</span><span class="tech">Azure</span>
+                    <span class="tech">AKS</span><span class="tech">Redis</span>
+                </div>
+            </article>
 
-                <!-- LinkedIn Button -->
-                <a href="https://www.linkedin.com/in/manishdubey26" target="_blank" rel="noopener noreferrer"
-                    class="linkedin-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path
-                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                    Connect on LinkedIn
+            <article class="job" itemscope itemtype="https://schema.org/WorkExperience">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title" itemprop="jobTitle">Delivery Module Lead</div>
+                        <div class="job-company" itemprop="name">Bengaluru, Karnataka</div>
+                    </div>
+                    <div class="job-date">
+                        <time itemprop="startDate" datetime="2017-08">Aug 2017</time> –
+                        <time itemprop="endDate" datetime="2025-02">Feb 2025</time>
+                    </div>
+                </div>
+                <ul itemprop="description">
+                    <li>Developed RESTful APIs and backend services using ASP.NET Core, serving high-traffic enterprise
+                        clients.</li>
+                    <li>Built responsive single-page applications using Angular 8–12 with RxJS for reactive state
+                        management.</li>
+                    <li>Mentored junior developers through pair programming and technical workshops.</li>
+                    <li>Drove sprint planning, backlog grooming, and code-quality initiatives.</li>
+                </ul>
+                <div class="tech-row">
+                    <span class="tech">ASP.NET Core</span><span class="tech">Angular</span><span class="tech">C#</span>
+                </div>
+            </article>
+
+            <article class="job" itemscope itemtype="https://schema.org/WorkExperience">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title" itemprop="jobTitle">Senior Software Engineer</div>
+                        <div class="job-company" itemprop="name">HCL Technologies · Noida, India</div>
+                    </div>
+                    <div class="job-date">
+                        <time itemprop="startDate" datetime="2014-01">Jan 2014</time> –
+                        <time itemprop="endDate" datetime="2017-08">Aug 2017</time>
+                    </div>
+                </div>
+                <ul itemprop="description">
+                    <li>Developed full-stack web applications using ASP.NET MVC and C#.</li>
+                    <li>Designed and maintained relational databases with SQL Server.</li>
+                    <li>Maintained and supported third-party enterprise application integrations.</li>
+                </ul>
+                <div class="tech-row">
+                    <span class="tech">ASP.NET MVC</span><span class="tech">C#</span><span class="tech">SQL
+                        Server</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- ===== SKILLS ===== -->
+        <section id="skills" aria-labelledby="skills-title">
+            <h2 class="section-title" id="skills-title">⚡ Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="badge">.NET Core</span><span class="badge">C#</span>
+                        <span class="badge">ASP.NET Web API</span><span class="badge">Microservices</span>
+                        <span class="badge">RESTful APIs</span><span class="badge">Entity Framework Core</span>
+                        <span class="badge">RabbitMQ</span><span class="badge">Azure</span>
+                        <span class="badge">Generative AI (.NET)</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="badge">Angular</span><span class="badge">TypeScript</span>
+                        <span class="badge">RxJS</span><span class="badge">Jasmine</span>
+                        <span class="badge">Karma</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="badge">PostgreSQL</span><span class="badge">SQL Server</span>
+                        <span class="badge">Redis</span><span class="badge">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Leadership & Methodology</h3>
+                    <div class="skill-tags">
+                        <span class="badge">Team Leadership</span><span class="badge">Agile / Scrum</span>
+                        <span class="badge">Code Reviews</span><span class="badge">Mentoring</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="badge">Visual Studio</span><span class="badge">VS Code</span>
+                        <span class="badge">GitHub</span><span class="badge">GitHub Copilot</span>
+                        <span class="badge">Bitbucket</span><span class="badge">Jira</span>
+                        <span class="badge">Confluence</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" aria-labelledby="contact-title">
+            <h2 class="section-title" id="contact-title">📬 Contact</h2>
+            <div class="contact-grid">
+                <a href="mailto:manish.dubey@outlook.com" class="contact-card" aria-label="Email Manish Dubey">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <div class="contact-label">Email</div>
+                        <div class="contact-value">manish.dubey@outlook.com</div>
+                    </div>
+                </a>
+                <a href="tel:+918130246127" class="contact-card" aria-label="Call Manish Dubey">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <div class="contact-label">Phone</div>
+                        <div class="contact-value">+91 8130246127</div>
+                    </div>
+                </a>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <div class="contact-label">Location</div>
+                        <div class="contact-value">Greater Noida, UP, India</div>
+                    </div>
+                </div>
+                <a href="https://github.com/MDubey87" class="contact-card" rel="noopener" target="_blank"
+                    aria-label="Manish Dubey's GitHub profile">
+                    <div class="contact-icon">⌨️</div>
+                    <div>
+                        <div class="contact-label">GitHub</div>
+                        <div class="contact-value">github.com/MDubey87</div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/manishdubey26" class="contact-card" rel="noopener" target="_blank"
+                    aria-label="Manish Dubey's LinkedIn profile">
+                    <div class="contact-icon">🔗</div>
+                    <div>
+                        <div class="contact-label">LinkedIn</div>
+                        <div class="contact-value">in/manishdubey26</div>
+                    </div>
                 </a>
             </div>
+        </section>
 
-            <!-- EDUCATION -->
-            <div class="card">
-                <h2 class="section-title">
-                    <span class="section-title-icon">🎓</span> Education
-                </h2>
-                <div class="edu-item">
-                    <div class="edu-degree">Master of Computer Application</div>
-                    <div class="edu-school">Babu Banarsi Das National Institute of Technology and Management</div>
-                    <div class="edu-year">2007 – 2010</div>
+        <!-- ===== EDUCATION ===== -->
+        <section id="education" aria-labelledby="edu-title">
+            <h2 class="section-title" id="edu-title">🎓 Education</h2>
+            <div class="edu-item" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                <div>
+                    <div class="edu-degree" itemprop="name">Master of Computer Application (MCA)</div>
+                    <div class="edu-school" itemprop="recognizedBy">Babu Banarsi Das National Institute of Technology
+                        and Management</div>
                 </div>
-                <div class="edu-item">
-                    <div class="edu-degree">Bachelor of Science</div>
-                    <div class="edu-school">Munishwar Dutt Post Graduate College - Pratapgarh, UP</div>
-                    <div class="edu-year">2004 – 2007</div>
-                </div>
+                <div class="edu-year">2007 – 2010</div>
             </div>
-
-            <!-- CERTIFICATIONS -->
-            <!--<div class="card">
-                    <h2 class="section-title">
-                        <span class="section-title-icon">🏅</span> Certifications
-                    </h2>
-                    <div class="edu-item">
-                        <div class="edu-degree">Google Cloud Associate Cloud Engineer</div>
-                        <div class="edu-year">2023</div>
-                    </div>
-                </div>-->
-
-            <!-- LANGUAGES -->
-            <div class="card">
-                <h2 class="section-title">
-                    <span class="section-title-icon">🌐</span> Languages
-                </h2>
-                <div class="edu-item">
-                    <div class="edu-degree">Hindi</div>
-                    <div class="edu-year">Native</div>
+            <div class="edu-item" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                <div>
+                    <div class="edu-degree" itemprop="name">Bachelor of Science (B.Sc.)</div>
+                    <div class="edu-school" itemprop="recognizedBy">Munishwar Dutt Post Graduate College — Pratapgarh,
+                        UP</div>
                 </div>
-                <div class="edu-item">
-                    <div class="edu-degree">English</div>
-                    <div class="edu-year">Conversational</div>
-                </div>
+                <div class="edu-year">2004 – 2007</div>
             </div>
-
-        </aside>
-
+        </section>
     </main>
 
     <!-- ===== FOOTER ===== -->
     <footer>
-        <p>© 2026 Manish Dubey. All rights reserved.</p>
-        <p style="margin-top: 0.5rem;">
-            <a href="https://www.linkedin.com/in/manishdubey26" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            &nbsp;·&nbsp;
-            <a href="https://github.com/MDubey87" target="_blank" rel="noopener noreferrer">GitHub</a>
-            &nbsp;·&nbsp;
+        <p>© 2026 Manish Dubey · Technical Lead, .NET Core &amp; Azure · Greater Noida, India</p>
+        <p style="margin-top:.5rem">
+            <a href="https://www.linkedin.com/in/manishdubey26" rel="noopener" target="_blank">LinkedIn</a> ·
+            <a href="https://github.com/MDubey87" rel="noopener" target="_blank">GitHub</a> ·
             <a href="mailto:manish.dubey@outlook.com">Email</a>
         </p>
     </footer>
-
-    <!-- ===== JAVASCRIPT ===== -->
-    <script>
-        // Mobile Navigation Toggle
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile nav when clicking a link
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Animate skill bars on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const fills = entry.target.querySelectorAll('.skill-bar-fill');
-                    fills.forEach(fill => {
-                        const width = fill.style.width;
-                        fill.style.width = '0%';
-                        setTimeout(() => {
-                            fill.style.width = width;
-                        }, 200);
-                    });
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.3 });
-
-        const skillSection = document.querySelector('.skill-bar-container');
-        if (skillSection) {
-            observer.observe(skillSection);
-        }
-
-        // Smooth scroll offset for fixed nav
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offset = 80;
-                    const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-                    window.scrollTo({ top, behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
 
 </body>
 
